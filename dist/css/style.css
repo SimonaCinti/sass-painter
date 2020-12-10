@@ -51,7 +51,7 @@ h2 {
   color: white;
   background-color: #666666;
   width: 200px;
-  padding: 15px;
+  padding: 10px;
   cursor: pointer;
 }
 
@@ -155,7 +155,7 @@ header,
 .jumbotron {
   background-image: url("../../img/jumbotron-bg.jpg");
   height: 463px;
-  background-position: top center;
+  background-position: top;
   background-repeat: no-repeat;
 }
 .jumbotron .container {
@@ -172,8 +172,6 @@ header,
   color: white;
   position: absolute;
   bottom: 5px;
-  left: 50%;
-  transform: translateX(-50%);
 }
 .jumbotron .container .col-center {
   flex-basis: 40%;
@@ -181,6 +179,7 @@ header,
 .jumbotron .container .title {
   color: white;
   padding-top: 40px;
+  padding-left: 20px;
 }
 .jumbotron .container li {
   display: block;
@@ -190,8 +189,15 @@ header,
   color: #989898;
 }
 .jumbotron .container .btn {
-  margin-top: 20px;
+  margin-top: 30px;
   display: flex;
+}
+.jumbotron .container .btn::after {
+  content: "";
+  height: 50px;
+  width: 2px;
+  background-color: white;
+  margin-left: 10px;
 }
 .jumbotron .container .btn i {
   position: absolute;
@@ -202,4 +208,13 @@ header,
 }
 .jumbotron .container .text p {
   text-transform: uppercase;
+}
+.jumbotron .container .col-right {
+  flex-basis: 40%;
+  height: 463px;
+}
+.jumbotron .container .col-right .buy {
+  height: calc(100% - 25px);
+  background-color: black;
+  margin-top: 25px;
 }
