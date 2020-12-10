@@ -1,0 +1,41 @@
+// Header
+
+header,
+.navbar {
+    background-color: $bg_black;
+}
+
+.navbar {
+    width: 90%;
+    margin: 0 auto;
+    flex-direction: column;
+    justify-content: space-around;
+    .top,
+    .bottom {
+        color: white;
+        padding: 10px 0;
+    }
+    .top {
+        align-self: flex-end;
+        ul {
+            flex-basis: 100%;
+            justify-content: space-around;
+        }
+        li {
+            padding-right: 20px;
+            color: $color-navbar;
+            font-size: 14px;
+            i {
+                color: $color-icon;
+                margin-right: 5px;
+            }
+            &:hover{
+                color: white;
+                cursor: pointer;
+            }
+        }
+        select {
+            width: 100px;
+        }
+    }
+}

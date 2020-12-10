@@ -6,5 +6,66 @@
 
 body {
   font-family: "Noto Sans JP", sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  display: inline-block;
+}
+
+.flex {
+  display: flex;
+}
+
+header,
+.navbar {
+  background-color: #101010;
+}
+
+.navbar {
+  width: 90%;
+  margin: 0 auto;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.navbar .top,
+.navbar .bottom {
+  color: white;
+  padding: 10px 0;
+}
+
+.navbar .top {
+  align-self: flex-end;
+}
+
+.navbar .top ul {
+  flex-basis: 100%;
+  justify-content: space-around;
+}
+
+.navbar .top li {
+  padding-right: 20px;
+  color: #989898;
+  font-size: 14px;
+}
+
+.navbar .top li i {
+  color: #009cff;
+  margin-right: 5px;
+}
+
+.navbar .top li:hover {
+  color: white;
+  cursor: pointer;
+}
+
+.navbar .top select {
+  width: 100px;
 }
 
