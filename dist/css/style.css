@@ -18,8 +18,59 @@ li {
   display: inline-block;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Flex Utilities */
+
 .flex {
   display: flex;
+}
+
+.flex.column {
+  flex-direction: column;
+}
+
+.flex.row {
+  flex-flow: row;
+}
+
+/* Flex Justify-Content */
+
+.flex.justify-center {
+  justify-content: center;
+}
+
+.flex.justify-between {
+  justify-content: space-between;
+}
+
+.flex.justify-start {
+  justify-content: flex-start;
+}
+
+.flex.justify-around {
+  justify-content: space-around;
+}
+
+.flex.align-center {
+  align-items: center;
+}
+
+/* Flex Items */
+
+.self-center {
+  align-self: center;
+}
+
+.grow-1 {
+  flex-grow: 1;
+}
+
+.w-100 {
+  width: 100%;
 }
 
 header,
@@ -30,8 +81,6 @@ header,
 .navbar {
   width: 90%;
   margin: 0 auto;
-  flex-direction: column;
-  justify-content: space-around;
 }
 
 .navbar .top,
@@ -52,7 +101,7 @@ header,
 .navbar .top li {
   padding-right: 20px;
   color: #989898;
-  font-size: 14px;
+  font-size: 12px;
 }
 
 .navbar .top li i {
@@ -67,5 +116,24 @@ header,
 
 .navbar .top select {
   width: 100px;
+}
+
+.navbar .bottom ul {
+  align-items: center;
+}
+
+.navbar .bottom li {
+  font-size: 14px;
+}
+
+.navbar .bottom a.logo {
+  display: inline-block;
+  max-width: 100px;
+}
+
+.navbar .bottom i {
+  font-size: 9px;
+  color: #989898;
+  margin-left: 5px;
 }
 

@@ -8,13 +8,12 @@ header,
 .navbar {
     width: 90%;
     margin: 0 auto;
-    flex-direction: column;
-    justify-content: space-around;
     .top,
     .bottom {
         color: white;
         padding: 10px 0;
     }
+    // Topbar
     .top {
         align-self: flex-end;
         ul {
@@ -24,7 +23,7 @@ header,
         li {
             padding-right: 20px;
             color: $color-navbar;
-            font-size: 14px;
+            font-size: 12px;
             i {
                 color: $color-icon;
                 margin-right: 5px;
@@ -38,4 +37,23 @@ header,
             width: 100px;
         }
     }
+    //Bottom bar
+    .bottom {
+        ul {
+            align-items: center;
+        }
+        li {
+            font-size: 14px;
+        }
+        a.logo  {
+            display: inline-block;
+            max-width: 100px;
+        }
+        i {
+            font-size: 9px;
+            color: $color-navbar;
+            margin-left: 5px;
+        }
+    }
+
 }
