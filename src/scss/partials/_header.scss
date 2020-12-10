@@ -4,7 +4,7 @@ header,
 .navbar {
     background-color: $bg_black;
 }
-
+// Navbar
 .navbar {
     width: 90%;
     margin: 0 auto;
@@ -23,7 +23,7 @@ header,
         li {
             padding-right: 20px;
             color: $color-navbar;
-            font-size: 12px;
+            font-size: $small;
             i {
                 color: $color-icon;
                 margin-right: 5px;
@@ -44,6 +44,7 @@ header,
         }
         li {
             font-size: 14px;
+            flex-basis: calc(100 / 9 - 10px);
         }
         a.logo  {
             display: inline-block;
@@ -56,4 +57,61 @@ header,
         }
     }
 
+}
+// Jumbotron
+.jumbotron {
+    background-image: url("../../img/jumbotron-bg.jpg");
+    height: 463px;
+    background-position: top center;
+    background-repeat: no-repeat;
+    .container {
+        width: 90%;
+        margin: 0 auto;
+        justify-content: space-around;
+
+        .col-left {
+            flex-basis: 20%;
+            height: 463px;
+        }
+        .artist {
+            font-size: $small;
+            color: white;
+            position: absolute;
+            bottom: 5px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .col-center {
+            flex-basis: 40%;
+        }
+        .title{
+            color: white;
+            padding-top: 40px;
+        }
+        li {
+            display: block;
+            margin-top: 10px;
+        }
+        i {
+            color: $color-navbar;
+            
+        }
+        .btn {
+            margin-top: 20px;
+            display: flex;
+            i {
+                position: absolute;
+                right: 8px;
+                top:20px;
+                font-size: 25px;
+                color: white;
+            }
+        }
+        .text {
+            p {
+                text-transform: uppercase;
+            }
+        }
+        
+    }
 }
