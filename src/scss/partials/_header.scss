@@ -22,10 +22,10 @@ header,
         }
         li {
             padding-right: 20px;
-            color: $color-navbar;
+            color: $color-action-2;
             font-size: $small;
             i {
-                color: $color-icon;
+                color: $color-action-1;
                 margin-right: 5px;
             }
             &:hover{
@@ -52,7 +52,7 @@ header,
         }
         i {
             font-size: 9px;
-            color: $color-navbar;
+            color: $color-action-2;
             margin-left: 5px;
         }
     }
@@ -62,9 +62,10 @@ header,
 .jumbotron {
     background-image: url("../../img/jumbotron-bg.jpg");
     height: 463px;
-    background-position: top;
+    background-position: 57%;
     background-repeat: no-repeat;
     .container {
+        @include container;
         justify-content: space-around;
         // Col left
         .col-left {
@@ -84,14 +85,14 @@ header,
         .title{
             color: white;
             padding-top: 40px;
-            padding-left: 20px;
+            padding-left: 30px;
         }
         li {
             display: block;
             margin-top: 10px;
         }
         i {
-            color: $color-navbar;
+            color: $color-action-2;
             
         }
         .download {
@@ -119,13 +120,49 @@ header,
         }
         // col right
         .col-right {
-            flex-basis: 40%;
+            flex-basis: 35%;
             height: 463px;
             .buy {
                 height: calc(100% - 25px);
+                padding: 30px 20px 0;
                 background-color: black;
                 margin-top: 25px;
                 color: white;
+            }
+            .price p:first-of-type  {
+                font-size: 28px;
+            }
+            .price p:nth-of-type(2){
+                color: $color-action-2;
+                text-transform: uppercase;
+                margin: 10px 0 20px;
+                font-size: 14px;
+            }
+
+            .money-back {
+                position: absolute;
+                top: 15px;
+                right: 20px;
+            }
+            .offer {
+                width: 90%;
+                margin-top: 30px;
+                padding: 15px 0 15px 15px;
+                background-color: white;
+                color: black;
+                &:hover a{
+                    text-decoration: underline;
+                }
+                p {
+                    margin-bottom: 10px;
+                }
+                p:nth-of-type(2){
+                    color: #333;
+                    font-size: 12px;
+                }
+                a {
+                    color: $color-action-1;
+                }
             }
         }
         

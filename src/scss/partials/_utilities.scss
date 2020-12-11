@@ -8,9 +8,13 @@
     position: relative;
 }
 
+.uppercase{
+    text-transform: uppercase;
+}
+
 // Containers
 
-.container {
+@mixin container {
     width: 90%;
     margin: 0 auto;
 }
@@ -23,4 +27,12 @@
     width: 200px;
     padding: 10px;
     cursor: pointer;
+}
+
+.btn-buy {
+    width: 150px;
+    background-color: $color-action-1;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-align: center;
 }

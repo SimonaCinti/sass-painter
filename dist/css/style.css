@@ -8,6 +8,7 @@ body {
   font-family: "Noto Sans JP", sans-serif;
   display: flex;
   flex-direction: column;
+  cursor: default;
 }
 
 ul {
@@ -47,9 +48,8 @@ h2 {
   position: relative;
 }
 
-.container {
-  width: 90%;
-  margin: 0 auto;
+.uppercase {
+  text-transform: uppercase;
 }
 
 .btn {
@@ -58,6 +58,14 @@ h2 {
   width: 200px;
   padding: 10px;
   cursor: pointer;
+}
+
+.btn-buy {
+  width: 150px;
+  background-color: #009cff;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 /* Flex Utilities */
@@ -160,10 +168,12 @@ header,
 .jumbotron {
   background-image: url("../../img/jumbotron-bg.jpg");
   height: 463px;
-  background-position: top;
+  background-position: 57%;
   background-repeat: no-repeat;
 }
 .jumbotron .container {
+  width: 90%;
+  margin: 0 auto;
   justify-content: space-around;
 }
 .jumbotron .container .col-left {
@@ -182,7 +192,7 @@ header,
 .jumbotron .container .title {
   color: white;
   padding-top: 40px;
-  padding-left: 20px;
+  padding-left: 30px;
 }
 .jumbotron .container li {
   display: block;
@@ -213,12 +223,47 @@ header,
   text-transform: uppercase;
 }
 .jumbotron .container .col-right {
-  flex-basis: 40%;
+  flex-basis: 35%;
   height: 463px;
 }
 .jumbotron .container .col-right .buy {
   height: calc(100% - 25px);
+  padding: 30px 20px 0;
   background-color: black;
   margin-top: 25px;
   color: white;
+}
+.jumbotron .container .col-right .price p:first-of-type {
+  font-size: 28px;
+}
+.jumbotron .container .col-right .price p:nth-of-type(2) {
+  color: #989898;
+  text-transform: uppercase;
+  margin: 10px 0 20px;
+  font-size: 14px;
+}
+.jumbotron .container .col-right .money-back {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+}
+.jumbotron .container .col-right .offer {
+  width: 90%;
+  margin-top: 30px;
+  padding: 15px 0 15px 15px;
+  background-color: white;
+  color: black;
+}
+.jumbotron .container .col-right .offer:hover a {
+  text-decoration: underline;
+}
+.jumbotron .container .col-right .offer p {
+  margin-bottom: 10px;
+}
+.jumbotron .container .col-right .offer p:nth-of-type(2) {
+  color: #333;
+  font-size: 12px;
+}
+.jumbotron .container .col-right .offer a {
+  color: #009cff;
 }
