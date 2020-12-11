@@ -42,20 +42,22 @@ main{
             h2 {
                 font-size: 32px;
             }
-            p {
+            .pdf {
                 line-height: 1.8;
-                margin-bottom: 20px;
+                margin-top: 20px;
                 cursor: pointer;
-            }
-            .pdf-icon {
+                &:before {
+                content: '';
                 display: inline-block;
                 height: 50px;
                 width: 50px;
                 background-image: url('../../img/pdf.png');
                 background-size: cover;
                 vertical-align: middle;
-                margin-right: 10px;
+                margin-right: 15px;
             }
+            }
+            
         }
     }
     
