@@ -283,6 +283,12 @@ header,
   color: #009cff;
 }
 
+/*MAIN*/
+main {
+  /*Navbar*/
+  /*Video Container*/
+  /* Main Gallery */
+}
 main .nav {
   background-color: #e6e6e6;
 }
@@ -347,4 +353,15 @@ main .video-container .video-play {
   background-image: url("../../img/bg-2.jpg");
   background-size: cover;
   border-radius: 20px;
+  cursor: pointer;
+}
+main .video-container .video-play:hover i {
+  color: #989898;
+}
+main .video-container .video-play i {
+  position: absolute;
+  color: white;
+  left: 45%;
+  top: 55%;
+  font-size: 80px;
 }
