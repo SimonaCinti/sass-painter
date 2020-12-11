@@ -311,3 +311,13 @@ main .video-container {
   background-image: url("../../img/bg-1.jpg");
   background-position: top;
 }
+main .video-container .text {
+  width: 50%;
+  margin: 0 auto;
+  padding-top: 50px;
+  color: white;
+  text-align: center;
+}
+main .video-container .text h2 {
+  font-size: 32px;
+}

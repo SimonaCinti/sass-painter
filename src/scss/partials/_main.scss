@@ -33,7 +33,16 @@ main{
         height: 700px;
         background-image: url('../../img/bg-1.jpg');
         background-position: top;
-
+        .text{
+            width: 50%;
+            margin: 0 auto;
+            padding-top: 50px;
+            color: white;
+            text-align: center;
+            h2 {
+                font-size: 32px;
+            }
+        }
     }
     
 }
