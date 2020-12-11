@@ -323,4 +323,15 @@ main .video-container .text h2 {
 }
 main .video-container .text p {
   line-height: 1.8;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+main .video-container .text .pdf-icon {
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+  background-image: url("../../img/pdf.png");
+  background-size: cover;
+  vertical-align: middle;
+  margin-right: 10px;
 }
