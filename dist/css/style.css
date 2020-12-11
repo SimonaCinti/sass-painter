@@ -182,9 +182,12 @@ header,
 }
 .jumbotron .container .artist {
   font-size: 12px;
-  color: white;
+  color: #dddddd;
   position: absolute;
-  bottom: 5px;
+  font-size: 11px;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 .jumbotron .container .col-center {
   flex-basis: 40%;
