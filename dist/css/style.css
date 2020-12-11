@@ -220,4 +220,5 @@ header,
   height: calc(100% - 25px);
   background-color: black;
   margin-top: 25px;
+  color: white;
 }
