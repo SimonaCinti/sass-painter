@@ -47,6 +47,11 @@ h2 {
   position: relative;
 }
 
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
 .btn {
   color: white;
   background-color: #666666;
@@ -159,8 +164,6 @@ header,
   background-repeat: no-repeat;
 }
 .jumbotron .container {
-  width: 90%;
-  margin: 0 auto;
   justify-content: space-around;
 }
 .jumbotron .container .col-left {
@@ -188,18 +191,18 @@ header,
 .jumbotron .container i {
   color: #989898;
 }
-.jumbotron .container .btn {
+.jumbotron .container .download {
   margin-top: 30px;
   display: flex;
 }
-.jumbotron .container .btn::after {
+.jumbotron .container .download::after {
   content: "";
   height: 50px;
   width: 2px;
   background-color: white;
   margin-left: 10px;
 }
-.jumbotron .container .btn i {
+.jumbotron .container .download i {
   position: absolute;
   right: 8px;
   top: 20px;
