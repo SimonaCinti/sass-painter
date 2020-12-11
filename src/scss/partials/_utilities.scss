@@ -27,6 +27,9 @@
     width: 200px;
     padding: 10px;
     cursor: pointer;
+    &:hover{
+        opacity: 0.75;
+    }
 }
 
 .btn-buy {
@@ -35,4 +38,8 @@
     font-size: 14px;
     text-transform: uppercase;
     text-align: center;
+    &:hover {
+        opacity: 1;
+        background-color: rgb(40, 172, 255);
+    }
 }

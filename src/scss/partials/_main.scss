@@ -1,0 +1,39 @@
+// MAIN
+
+main{
+    // Navbar
+    .nav {
+        background-color: $bg_nav;
+    }
+    ul.container {
+        @include container;
+        background-color: $bg_nav;
+    }
+    li  {
+        flex-basis: 10%;
+        text-align: center;
+        color: $color-menu;
+        a {
+            display: inline-block;
+            width: 100%;
+            padding: 10px 0;
+            &:hover{
+                background-color: #eee;
+            }
+            &:focus  {
+                background-color: #eee;
+                color: black;
+                border-bottom: 2px solid black;
+            }
+        }
+        
+    }
+    .video-container {
+        width: 100%;
+        height: 700px;
+        background-image: url('../../img/bg-1.jpg');
+        background-position: top;
+
+    }
+    
+}
