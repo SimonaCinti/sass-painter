@@ -65,8 +65,7 @@ header,
     background-position: top;
     background-repeat: no-repeat;
     .container {
-        width: 90%;
-        margin: 0 auto;
+        @include contaner;
         justify-content: space-around;
         // Col left
         .col-left {

@@ -8,6 +8,13 @@
     position: relative;
 }
 
+// Containers
+
+@mixin container{
+    width: 90%;
+    margin: 0 auto;
+}
+
 // Bottons
 
 .btn {
