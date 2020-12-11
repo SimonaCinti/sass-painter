@@ -16,7 +16,7 @@ main{
         a {
             display: inline-block;
             width: 100%;
-            padding: 10px 0;
+            padding: 20px 0;
             &:hover{
                 background-color: #eee;
             }
@@ -41,6 +41,9 @@ main{
             text-align: center;
             h2 {
                 font-size: 32px;
+            }
+            p {
+                line-height: 1.8;
             }
         }
     }
