@@ -470,3 +470,23 @@ main .inspire-container .inspire img:hover {
   transition: all 0.8s;
   transform: scale(1.1);
 }
+main .additions-container {
+  background-image: url("../../img/bg-05.jpg");
+  padding: 80px 0;
+  justify-content: space-evenly;
+}
+main .additions-container .addition-box {
+  flex-basis: calc(100% / 2 - 10%);
+  background: white;
+  text-align: center;
+  padding: 60px 40px 80px;
+}
+main .additions-container .addition-box h3 {
+  margin-bottom: 10px;
+}
+main .additions-container .addition-box a {
+  color: #009cff;
+}
+main .additions-container .addition-box a:hover {
+  text-decoration: underline;
+}
