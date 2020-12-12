@@ -9,6 +9,7 @@ body {
   display: flex;
   flex-direction: column;
   cursor: default;
+  line-height: 1.5;
 }
 
 ul {
@@ -38,6 +39,14 @@ h1 {
 h2 {
   font-size: 20px;
   font-weight: normal;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+p {
+  font-size: 18px;
 }
 
 .w-100 {
@@ -404,12 +413,33 @@ main .fa-chevron-circle-right {
   color: #e74500;
   cursor: pointer;
 }
-main .break-space {
-  background-attachment: fixed;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
 main .bgscroll01 {
   background-image: url("../../img/bg-03.jpg");
   height: 650px;
+}
+main .tool-container {
+  background-color: #222222;
+  color: white;
+}
+main .tool-container .tool {
+  width: 60%;
+  margin: 50px auto 80px;
+}
+main .canvas-container,
+main .brushes-container {
+  width: 80%;
+  margin: 50px auto 0;
+  padding-bottom: 50px;
+}
+main .canvas-text,
+main .brushes-text {
+  flex-basis: 40%;
+}
+main .canvas-text h3,
+main .brushes-text h3 {
+  margin-bottom: 15px;
+}
+main .canvas-img,
+main .brushes-img {
+  flex-basis: 50%;
 }
