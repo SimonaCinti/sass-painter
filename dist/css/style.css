@@ -56,6 +56,16 @@ h2 {
   width: 100%;
 }
 
+.pd-t50 {
+  padding-top: 50px;
+}
+
+.break-space {
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .btn {
   color: white;
   background-color: #666666;
@@ -77,6 +87,19 @@ h2 {
 .btn-buy:hover {
   opacity: 1;
   background-color: #28acff;
+}
+
+.text {
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 50px;
+}
+.text h2 {
+  font-size: 32px;
+}
+.text p {
+  line-height: 1.8;
 }
 
 /* Flex Utilities */
@@ -205,7 +228,6 @@ header,
 }
 .jumbotron .container .title {
   color: white;
-  padding-top: 40px;
   padding-left: 30px;
 }
 .jumbotron .container li {
@@ -306,6 +328,7 @@ main li a {
   display: inline-block;
   width: 100%;
   padding: 20px 0;
+  border-bottom: 2px solid #eee;
 }
 main li a:hover {
   background-color: #eee;
@@ -320,23 +343,14 @@ main .video-container {
   background-image: url("../../img/bg-1.jpg");
   background-position: top;
   background-size: cover;
-}
-main .video-container .text {
-  width: 50%;
-  margin: 0 auto;
-  padding-top: 50px;
   color: white;
-  text-align: center;
 }
-main .video-container .text h2 {
-  font-size: 32px;
-}
-main .video-container .text .pdf {
+main .video-container .pdf {
   line-height: 1.8;
   margin-top: 20px;
   cursor: pointer;
 }
-main .video-container .text .pdf:before {
+main .video-container .pdf:before {
   content: "";
   display: inline-block;
   height: 50px;
@@ -364,4 +378,38 @@ main .video-container .video-play i {
   left: 45%;
   top: 55%;
   font-size: 80px;
+}
+main .gallery {
+  width: 70%;
+  margin: 50px auto;
+}
+main img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .fa-chevron-circle-left {
+  position: absolute;
+  left: -50px;
+  top: 50%;
+  font-size: 30px;
+  color: #e74500;
+  cursor: pointer;
+}
+main .fa-chevron-circle-right {
+  position: absolute;
+  right: -50px;
+  top: 50%;
+  font-size: 30px;
+  color: #e74500;
+  cursor: pointer;
+}
+main .break-space {
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+main .bgscroll01 {
+  background-image: url("../../img/bg-03.jpg");
+  height: 650px;
 }

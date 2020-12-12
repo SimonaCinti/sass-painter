@@ -16,11 +16,21 @@
     width: 100%;
 }
 
+.pd-t50 {
+    padding-top: 50px;
+}
+
 // Containers
 
 @mixin container {
     width: 90%;
     margin: 0 auto;
+}
+
+.break-space { 
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 // Bottons
@@ -47,3 +57,18 @@
         background-color: rgb(40, 172, 255);
     }
 }
+
+// Template text
+
+.text{
+    width: 70%;
+    margin: 0 auto;     
+    text-align: center;
+    padding-top: 50px;
+    h2 {
+        font-size: 32px;
+    }
+    p {
+        line-height: 1.8;
+    }
+}   
