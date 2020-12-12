@@ -472,11 +472,11 @@ main .inspire-container .inspire img:hover {
 }
 main .additions-container {
   background-image: url("../../img/bg-05.jpg");
-  padding: 80px 0;
+  padding: 80px;
   justify-content: space-evenly;
 }
 main .additions-container .addition-box {
-  flex-basis: calc(100% / 2 - 10%);
+  flex-basis: calc(100% / 2 - 125px);
   background: white;
   text-align: center;
   padding: 60px 40px 80px;
@@ -489,4 +489,54 @@ main .additions-container .addition-box a {
 }
 main .additions-container .addition-box a:hover {
   text-decoration: underline;
+}
+
+footer {
+  background-color: #ececec;
+}
+footer .links {
+  background-color: #ececec;
+  width: 80%;
+  margin: 0 auto 20px;
+  flex-wrap: wrap;
+}
+footer .links ul {
+  padding: 50px;
+  flex-basis: calc(100% / 4 - 20px);
+}
+footer .links li {
+  display: block;
+  font-size: 12px;
+  margin-bottom: 10px;
+  color: #989898;
+}
+footer .links li:first-of-type {
+  color: black;
+  margin-bottom: 20px;
+  font-size: 15px;
+}
+footer .links li a:hover {
+  color: black;
+  text-decoration: underline;
+}
+footer .links .social {
+  position: absolute;
+  right: 0;
+  bottom: 0px;
+  font-size: 32px;
+}
+footer .credits {
+  width: 100%;
+  background-color: #1e1e1e;
+}
+footer .credits li {
+  font-size: 12px;
+  color: #989898;
+  padding: 15px 40px;
+}
+footer .credits li:last-of-type {
+  color: white;
+}
+footer .credits li a:hover {
+  color: white;
 }

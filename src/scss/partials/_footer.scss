@@ -1,0 +1,53 @@
+// Footer Link
+
+footer {
+    background-color: $bg_footer;
+    .links {
+        background-color: $bg_footer;
+        width: 80%;
+        margin: 0 auto 20px;
+        flex-wrap: wrap;
+        ul{
+            padding: 50px;
+            flex-basis: calc(100% / 4 - 20px);
+        }    
+        li{
+            display: block;
+            font-size: $small;
+            margin-bottom: 10px;
+            color: $color-action-2;
+            &:first-of-type{
+                color: black;
+                margin-bottom: 20px; 
+                font-size: 15px;
+            }
+            a:hover {
+                color: black;
+                text-decoration: underline;
+            }
+        }
+        .social {
+            position: absolute;
+            right: 0;
+            bottom: 0px;
+            font-size: 32px;
+        }
+    }
+    // Footer | Credits
+    .credits {
+        width: 100%;
+        background-color: $bg_credits;
+        li {
+            font-size: $small;
+            color: $color-action-2;
+            padding: 15px 40px;
+            &:last-of-type{
+                color: white;
+            }
+            a:hover {
+                color: white;
+            }
+        }   
+    }
+}
+
