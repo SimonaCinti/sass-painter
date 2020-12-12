@@ -133,4 +133,27 @@ main{
         background-image: url('../../img/bg-04.jpg');
         height: 650px;
     }
+    // Main | Inspire
+    .inspire-container {
+        @include container;
+        .container {
+            margin: 50px 0;
+        }
+        .inspire {
+            flex-basis: calc(100% / 5 - 15px);
+            overflow: hidden;
+            .image p{
+                font-size: 16px;
+                color: white;
+                position: absolute;
+                bottom: 10%;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+            img:hover {
+                transition: all 0.8s;
+                transform: scale(1.1);
+            }
+        }
+    }
 }
