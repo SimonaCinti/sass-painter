@@ -32,7 +32,6 @@ main{
     /*Video Container*/
     .video-container {
         width: 100%;
-        // height: 700px;
         background-image: url('../../img/bg-1.jpg');
         background-position: top;
         background-size: cover;
@@ -129,5 +128,9 @@ main{
     .canvas-img,
     .brushes-img {
         flex-basis: 50%;
+    }
+    .bgscroll02{
+        background-image: url('../../img/bg-04.jpg');
+        height: 650px;
     }
 }

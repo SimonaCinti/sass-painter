@@ -78,7 +78,7 @@ p {
 .btn {
   color: white;
   background-color: #666666;
-  width: 200px;
+  width: 220px;
   padding: 10px;
   cursor: pointer;
 }
@@ -442,4 +442,8 @@ main .brushes-text h3 {
 main .canvas-img,
 main .brushes-img {
   flex-basis: 50%;
+}
+main .bgscroll02 {
+  background-image: url("../../img/bg-04.jpg");
+  height: 650px;
 }
