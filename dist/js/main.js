@@ -98,7 +98,7 @@ var app = new Vue({
   data: {
     // Slide gallery img
     indexPhoto: 0,
-    gallery: ['gallery-01.jpg', 'gallery-02.jpg', 'gallery-03.jpg', 'gallery-04.jpg', 'gallery-05.jpg', 'gallery-06.jpg']
+    gallery: ['gallery-01', 'gallery-02', 'gallery-03', 'gallery-04', 'gallery-05', 'gallery-06']
   },
   methods: {
     nextPhoto: function nextPhoto() {
