@@ -190,7 +190,7 @@
                 </div>
                 <div class="gallery relative">
                     <i @click="prevPhoto" class="fas fa-chevron-circle-left"></i>
-                    <img :src="gallery[indexPhoto]" alt="">
+                    <img :src="['./img/' + gallery[indexPhoto]]" alt="">
                     <i @click="nextPhoto" class="fas fa-chevron-circle-right"></i>
                 </div>
             </section>
