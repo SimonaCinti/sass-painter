@@ -187,10 +187,14 @@
                         and Charcoal
                         Drawing.
                     </p>
+                    <p class="hover-img">Hover the mouse over the image for a short demonstration </p>
                 </div>
                 <div class="gallery relative">
                     <i @click="prevPhoto" class="fas fa-chevron-circle-left"></i>
-                    <img :src="['./img/' + gallery[indexPhoto] +'.jpg']" alt="">
+                    <img 
+                    @mouseover="effectImg"
+                    @mouseout="effectImg"
+                    :src="['./img/' + gallery[indexPhoto] + (imgMod === true ? '-b' :'') +'.jpg']" alt="">
                     <i @click="nextPhoto" class="fas fa-chevron-circle-right"></i>
                 </div>
             </section>

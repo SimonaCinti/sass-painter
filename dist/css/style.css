@@ -388,6 +388,10 @@ main .video-container .video-play i {
   top: 55%;
   font-size: 80px;
 }
+main .gallery-container .hover-img {
+  margin-top: 15px;
+  color: #009cff;
+}
 main .gallery {
   width: 70%;
   margin: 50px auto;

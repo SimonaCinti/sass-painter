@@ -12,8 +12,10 @@ var app = new Vue({
             'gallery-05',
             'gallery-06',
         ],
+        imgMod: false,
     },
     methods: {
+        // Gallery
         nextPhoto() {
             this.indexPhoto++
             if (this.indexPhoto > this.gallery.length - 1) {
@@ -26,6 +28,10 @@ var app = new Vue({
                 this.indexPhoto = this.gallery.length - 1
             }
         },
+        // On effect
+        effectImg(){
+            this.imgMod = !this.imgMod;
+        }
     },
 
 })

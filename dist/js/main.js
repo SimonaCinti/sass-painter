@@ -98,9 +98,11 @@ var app = new Vue({
   data: {
     // Slide gallery img
     indexPhoto: 0,
-    gallery: ['gallery-01', 'gallery-02', 'gallery-03', 'gallery-04', 'gallery-05', 'gallery-06']
+    gallery: ['gallery-01', 'gallery-02', 'gallery-03', 'gallery-04', 'gallery-05', 'gallery-06'],
+    imgMod: false
   },
   methods: {
+    // Gallery
     nextPhoto: function nextPhoto() {
       this.indexPhoto++;
 
@@ -114,6 +116,10 @@ var app = new Vue({
       if (this.indexPhoto < 0) {
         this.indexPhoto = this.gallery.length - 1;
       }
+    },
+    // On effect
+    effectImg: function effectImg() {
+      this.imgMod = !this.imgMod;
     }
   }
 });

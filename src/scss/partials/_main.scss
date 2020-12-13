@@ -73,6 +73,10 @@ main{
         }
     }
     /* Main Gallery */
+    .gallery-container .hover-img {
+        margin-top: 15px;
+        color: $color-action-1;
+    }
     .gallery{
         width: 70%; 
         margin: 50px auto;
